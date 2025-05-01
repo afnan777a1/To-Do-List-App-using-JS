@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Shopping List</title>
   </head>
   <body
     style="
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 200px;
+      height: 100vh;
+      background: rgb(249, 249, 249);
     "
   >
     <div
       style="
+        width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: rgb(255, 0, 0);
-        background: linear-gradient(to right, rgb(255, 179, 179), #5f0909);
+        background: linear-gradient(
+          to right,
+          rgb(255, 179, 179),
+          rgb(95, 9, 9)
+        );
       "
     >
-      <h3>Add your shopping List here:</h3>
-      <form id="myForm">
+      <h3>Add your shopping list here:</h3>
+      <form id="myForm" style="margin-bottom: 20px">
         <input
           id="myInput"
           type="text"
-          style="color: rgb(255, 6, 6); font-size: 20px"
+          placeholder="Enter item"
+          style="color: rgb(255, 6, 6); font-size: 20px; padding: 5px"
         />
-        <button>Add</button>
+        <button
+          type="submit"
+          style="
+            margin-left: 10px;
+            font-size: 16px;
+            background-color: rgb(200, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+          "
+        >
+          Add
+        </button>
       </form>
 
       <h3>Shopping To Do List</h3>
-      <ul id="myItem"></ul>
+      <ul
+        id="myItem"
+        style="
+          color: rgb(255, 255, 255);
+          font-size: 18px;
+          padding: 0;
+          list-style: none;
+        "
+      ></ul>
     </div>
 
     <script src="script.js"></script>
