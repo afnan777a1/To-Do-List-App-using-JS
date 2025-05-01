@@ -1,4 +1,4 @@
-var myFrom = (myForm = document.getElementById("myForm"));
+var myForm = document.getElementById("myForm");
 var myInput = document.getElementById("myInput");
 var myItem = document.getElementById("myItem");
 
@@ -11,7 +11,6 @@ function createItem(inputItems) {
   var items = `<li>${inputItems}
 	<button onclick="deleteElement(this)">Delete</button> </li>`;
   myItem.insertAdjacentHTML("beforeend", items);
-
   myInput.value = "";
   myInput.focus();
 }
